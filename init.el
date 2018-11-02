@@ -3,6 +3,9 @@
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
 
+(setq custom-file (expand-file-name "~/.emacs.d/custom.el"))
+(load custom-file 'noerror)
+
 (add-to-list 'load-path (expand-file-name "modules" user-emacs-directory))
 (setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin"))
 
