@@ -64,7 +64,8 @@
 
 (global-unset-key (kbd "M-x")) ; execute-extended-command
 (global-set-key (kbd "M-a") 'execute-extended-command)
-(global-set-key (kbd "M-q") 'projectile-run-shell)
+(global-set-key (kbd "M-Q") 'projectile-run-shell)
+(global-set-key (kbd "M-q") 'shell-command)
 
 
 (global-unset-key (kbd "C-d"))
@@ -110,7 +111,7 @@
 (global-set-key (kbd "M-r") 'replace-string)
 (global-set-key [C-return] 'senny-duplicate-line)
 (global-set-key (kbd "C-\\") 'kill-buffer)
-(global-set-key (kbd "C-'") 'senny-kill-buffer)
+(global-set-key (kbd "C-$") 'senny-kill-buffer)
 (global-set-key (kbd "C-c i") 'indent-buffer)
 (global-set-key (kbd "C-c n") 'senny-cleanup-buffer)
 (global-set-key (kbd "C-x b") 'helm-buffers-list)
@@ -123,6 +124,7 @@
 
 ;;;; Searching
 (global-set-key (kbd "C-x f") 'projectile-grep)
+(define-key isearch-mode-map "\M-v" 'isearch-yank-pop)
 
 ;; Use regex searches by default.
 (global-unset-key (kbd "C-M-r")) ;; isearch-backwards
