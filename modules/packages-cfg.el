@@ -210,11 +210,16 @@
 	 ("C-r C-s" . robe-start)))
 (add-hook 'ruby-mode-hook 'robe-mode)
 
+(use-package perspective
+  :ensure t
+  :bind (("C-p s" . persp-switch)
+	 ("C-p p" . persp-prev)
+	 ("C-p k" . persp-kill))
+  :config (persp-mode))
+
 (use-package persp-projectile
   :ensure t
-  :bind (("C-x p" . projectile-persp-switch-project)
-	 ("C-p s" . persp-switch))
-  :config (persp-mode))
+  :bind (("C-x p" . projectile-persp-switch-project)))
 
 
 (provide 'packages-cfg)
