@@ -145,8 +145,10 @@
 
 (use-package drag-stuff
   :ensure t
-  :bind (("M-<up>" . drag-stuff-up)
-	 ("M-<down>" . drag-stuff-down)))
+  :bind (("C-M-i" . drag-stuff-up)
+	 ("C-M-k" . drag-stuff-down)
+	 ("C-M-l" . python-indent-shift-right)
+	 ("C-M-j" . python-indent-shift-left)))
 
 (use-package magit
   :ensure t
