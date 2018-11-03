@@ -15,8 +15,8 @@
 (use-package helm
   :ensure t
   :bind (("M-a" . helm-M-x)
-         ("C-x C-f" . helm-find-files)
-         ("C-x f" . helm-recentf)
+         ("C-p C-o" . helm-find-files)
+         ("C-p o" . helm-recentf)
          ("C-SPC" . helm-dabbrev)
          ("M-y" . helm-show-kill-ring)
          ("C-x b" . helm-buffers-list))
