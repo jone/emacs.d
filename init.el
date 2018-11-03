@@ -10,6 +10,7 @@
 (setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin"))
 
 (require 'defuns-cfg)
+(require 'enlarge-cfg)
 (require 'keybindings-cfg)
 
 (if (member "Monaco" (font-family-list))

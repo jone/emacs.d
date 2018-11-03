@@ -11,7 +11,7 @@
 (defun senny-enlargement--get-winconfigs-of-current-persp ()
   (senny-enlargement--create-winconfig-store-if-nil)
 
-  (let* ((persp (persp-name persp-curr))
+  (let* ((persp (persp-name (persp-curr)))
          (configs (gethash persp senny-enlargement--window-configuration-store)))
     (if (eq configs nil)
         '()
@@ -20,7 +20,7 @@
 (defun senny-enlargement--set-winconfigs-of-current-persp (configs)
   (senny-enlargement--create-winconfig-store-if-nil)
 
-  (let ((persp (persp-name persp-curr)))
+  (let ((persp (persp-name (persp-curr))))
     (puthash persp configs senny-enlargement--window-configuration-store)))
 
 (defun senny-enlargement--get-current-winconfig ()
