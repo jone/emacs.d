@@ -57,4 +57,14 @@ on the current buffer."
   (untabify (point-min) (point-max))
   (delete-trailing-whitespace))
 
+(defun jone-cycle-window ()
+  "Move cursor to the next window."
+  (interactive)
+  (other-window 1))
+
+(defun jone-reverse-cycle-window ()
+  "Move cursor to the previous window."
+  (interactive)
+  (other-window -1))
+
 (provide 'defuns-cfg)

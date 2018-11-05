@@ -77,6 +77,8 @@
 (global-set-key (kbd "C-s") 'windmove-down)
 (global-set-key (kbd "C-a") 'windmove-left)
 (global-set-key (kbd "C-w") 'windmove-up)
+(global-set-key (kbd "M-s") 'jone-cycle-window)
+(global-set-key (kbd "M-S") 'jone-reverse-cycle-window)
 
 (global-unset-key (kbd "C-/")) ; undo
 (global-unset-key (kbd "C-_")) ; undo
