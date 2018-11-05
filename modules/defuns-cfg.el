@@ -67,4 +67,11 @@ on the current buffer."
   (interactive)
   (other-window -1))
 
+(defun jone-persp-switch-last ()
+  "Switch to the previously accessed perspective or to the next in the loop."
+  (interactive)
+  (if (persp-last)
+      (persp-switch-last)
+    (persp-next)))
+
 (provide 'defuns-cfg)

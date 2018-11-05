@@ -215,7 +215,7 @@
 (use-package perspective
   :ensure t
   :bind (("C-p s" . persp-switch)
-         ("C-p p" . persp-switch-last)
+         ("C-p p" . jone-persp-switch-last)
          ("C-p k" . persp-kill))
   :config (persp-mode))
 
