@@ -224,4 +224,8 @@
   :bind (("C-x p" . projectile-persp-switch-project)))
 
 
+(use-package jone
+  :bind (("C-c f c" . jone-make-changelog-entry)))
+
+
 (provide 'packages-cfg)
