@@ -85,7 +85,8 @@
             (setq ruby-indent-level 2
                   ruby-deep-indent-paren nil
                   ruby-bounce-deep-indent t
-                  ruby-hanging-indent-level 2)))
+                  ruby-hanging-indent-level 2))
+  :init (add-to-list 'auto-mode-alist '("Brewfile" . ruby-mode)))
 
 (use-package rubocop
   :ensure t
